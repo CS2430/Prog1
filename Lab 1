@@ -1,0 +1,76 @@
+CS 2430 - Lab 1 - To Get you started on Program 1  
+
+For this lab, you will be starting Program 1.  
+
+1. On your J drive, make a Prog1 folder.   
+
+2. Follow the directions as in the Program 0 description to make  project 
+   and add Prog1.java to it by copying it into the src folder. 
+
+3. The next 2 steps help you to create two files:
+       TableTennisPlayer.java and TabletennisPlayerDatabase.java
+
+4. Start the class for TableTennisPlayerDatabase.java.  Use File/New File to create it.
+   Select Java for Cagegory and Java Class for File type.
+   Click Next button and for Class Name type in:    TableTennisPlayerDatabase
+
+   Copy and paste the following into your class.  
+   Make sure to NOT have 2 lines of "public class TableTennisPlayerDatabase"
+   and correct number of matching curly braces.
+
+import java.util.Scanner;
+public class TableTennisPlayerDatabase
+{
+       
+   public void run()
+   {
+      System.out.println("In the run method");
+   }
+}
+
+This is a "STUB" for the run method.  Later, we will use the run method as 
+a "DRIVER" to test methods in TableTennisPlayer.java.  Save, then add this file 
+to your project.  
+
+Build & run Prog1.  
+                                             
+5. Start the class for TableTennisPlayer.java as done in the step above.
+
+
+public class TableTennisPlayer
+{
+   private String name;   // name of the TableTennisPlayer
+   private int rating;    // rating of TableTennisPlayer
+   private int adjustmentForTournament;
+
+   // initialize TableTennisPlayerName and TTrating
+   // Don't forget to set adjustmentForTournament to 0
+   public TableTennisPlayer ( String TableTennisPlayerName, int TTrating  )
+   {
+
+
+
+
+
+
+
+   }
+
+}
+
+Build and run.  
+
+6. Adding in methods one at a time.  Do the toString method first.
+      a. Add a toString method to TableTennisPlayer (see Prog1 description &
+         see the notes.)
+      b. Add the following code to the TableTennisPlayerDatabase run method:
+         TableTennisPlayer TTplayer =
+                               new TableTennisPlayer( "Scanman", 1350 );
+         System.out.println(TTplayer);      
+      c. Compile until all errors are gone, then RUN it.
+
+7. Add in the other 2 methods one at a time, as in 6 above. See the
+Program 1 description for hints as to what the code does.
+For each method you write, add a call in the TableTennisPlayerDatabase run method 
+to call the method and write the results (a simple TEST of the method).  
+Then compile, run to see that each one works. 
